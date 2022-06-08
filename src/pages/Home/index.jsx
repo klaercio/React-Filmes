@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react';
 import {Container} from './style.jsx';
 import { chave } from '../../config/key.jsx';
-
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 
@@ -20,7 +20,7 @@ export default function Home() {
             <ul>
                 {filmes.map((item, index) => (
                     <li key={item.id}>
-                        <a href='www.google.com'><img src={`${imagePath}${item.poster_path}`} alt={item.titulo}/></a>
+                        <Link to={`/filme/${item.id}`}><img src={`${imagePath}${item.poster_path}`} alt={item.titulo}/></Link>
                         <span>{item.title}</span>
                     </li>
                 ))}
