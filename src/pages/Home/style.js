@@ -28,7 +28,8 @@ export const Container = styled.div `
 
     span {
         font-weight : bold;
-        font-size: 1.92rem;
+        font-size : 1.92rem;
+        text-align : center;
     }
 
     a {
@@ -38,4 +39,4 @@ export const Container = styled.div `
     a:hover {
         transform: scale(1.1);
     }
-`
+`;
