@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react';
-import {Container} from './style.js';
-import { chave } from '../../config/key.js';
+import {Container} from './style.jsx';
+import { chave } from '../../config/key.jsx';
 
 
 export default function Home() {
